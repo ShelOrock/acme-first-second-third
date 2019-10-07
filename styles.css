@@ -21,7 +21,7 @@ h1 {
 }
 
 #lists > div > div > p{
-    padding: 1rem;
+    padding: 1rem 0;
     margin: 1rem;
 }
 
@@ -37,4 +37,17 @@ button {
 
 button:disabled {
     background-color: rgb(236, 236, 236);
+}
+
+@media (max-width: 600px) {
+    #lists {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #lists > div {
+        width: 90%;
+        margin-top: 1rem;
+    }
 }
